@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>html模板</title>
+</head>
+<style>
+    textarea {
+        width: 300px;
+    }
+</style>
+
+<body>
+    <div class="before">
+        <h2>编译之前：</h2>
+        <textarea>
+        <p>Name:${coco}</p>
+        <p>Age:${info.age}</p>
+        </textarea>
+    </div>
+
+    <h2>编译之后：</h2>
+    <div class="container">
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+    <script src="../output/cotemplate.js"></script>
+    <script type="text/plain" id="tpl">
+        <p>Name:${coco}</p>
+        <p>Age:${info.age}</p>
+    </script>
+    <script>
+        var str = $('#tpl').html();
+
+        var data = {
+            coco: 'qiaoqi',
+            info: {
+                age: 18
+            }
+        }
+
+        var tpl = comtemplate(str, data);
+
+        $('.container').html(tpl);
+    </script>
+</body>
+
+</html>

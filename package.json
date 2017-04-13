@@ -1,0 +1,24 @@
+{
+  "name": "co-template",
+  "version": "1.0.0",
+  "description": "a javascript html template",
+  "main": "./src/cotemplate.js",
+  "author": "Coco",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chokcoco/co-template.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "~3.8.10",
+    "gulp-header": "^1.7.1",
+    "gulp-jshint": "~1.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.7"
+  }
+}
