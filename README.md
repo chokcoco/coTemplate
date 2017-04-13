@@ -1,8 +1,8 @@
-# 设计模式
+# coTemplate
 
-各个设计模式源码及Deom示例。
+一款小巧的 HTML 模板引擎
 
-+ `pub-sub.js` 发布-订阅模式
+
 
 ## License
 
