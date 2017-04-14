@@ -8,7 +8,7 @@
     } else {
         this[name] = definition();
     }
-})('comtemplate', function() {
+})('cotemplate', function() {
     var tplReg = /\$\{\s*([^\{\}\s]+)\s*\}/g;
     var jsReg = /(^( )?(if|for|else|switch|case|break|{|}))(.*)?/g;
 
@@ -29,7 +29,7 @@
      * @param {String} tpl 模板字符串 
      * @param {Objcet} data 模板内替换对象
      */
-    function comtemplate(tpl, data) {
+    function cotemplate(tpl, data) {
         while (match = tplReg.exec(tpl)) {
             // 添加非逻辑部分
             lineAdd(tpl.slice(pointer, match.index)); 
@@ -54,5 +54,5 @@
     /**
      * export
      */
-    return comtemplate;
+    return cotemplate;
 });

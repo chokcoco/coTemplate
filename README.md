@@ -8,7 +8,7 @@
 
 ## API
 
-### `comtemplate(str:String, data:Object);`
+### `cotemplate(str:String, data:Object);`
 
 ## Demo
 
@@ -31,14 +31,12 @@ var tpl = `
             <div>${bar.foo.else}</div>
           `;
 
-comtemplate(tpl, data);
+cotemplate(tpl, data);
 // <p>Name:Coco</p>        
 // <p>Age:18</p>        
 // <div>HTML-template:co-template</div>
           
 ```
-
-
 
 ## License
 
