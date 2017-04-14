@@ -1,5 +1,5 @@
 /**
- * 小巧的 html 模板
+ * coTemplate
  *  
  */
 (function(name, definition) {

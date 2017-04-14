@@ -8,7 +8,8 @@
 </head>
 <style>
     textarea {
-        width: 300px;
+        width: 500px;
+        height: 200px;
     }
 </style>
 
@@ -16,8 +17,9 @@
     <div class="before">
         <h2>编译之前：</h2>
         <textarea>
-        <p>Name:${coco}</p>
-        <p>Age:${info.age}</p>
+            <p>Name:${name}</p>
+            <p>Age:${info.age}</p>
+            <div>HTML-template:${bar.foo.else}</div>
         </textarea>
     </div>
 
@@ -28,16 +30,22 @@
     <script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
     <script src="../output/cotemplate.js"></script>
     <script type="text/plain" id="tpl">
-        <p>Name:${coco}</p>
+        <p>Name:${name}</p>
         <p>Age:${info.age}</p>
+        <div>HTML-template:${bar.foo.else}</div>
     </script>
     <script>
         var str = $('#tpl').html();
 
         var data = {
-            coco: 'qiaoqi',
+            name: 'Coco',
             info: {
                 age: 18
+            },
+            bar: {
+                foo: {
+                    else: 'co-template'
+                }
             }
         }
 
