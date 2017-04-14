@@ -12,7 +12,9 @@
 
 ## Demo
 
-``` javascript
+``` HTML
+<script src="../js/cotemplate.js"></script>
+<script>
 var data = {
     name: 'Coco',
     info: {
@@ -35,7 +37,7 @@ cotemplate(tpl, data);
 // <p>Name:Coco</p>        
 // <p>Age:18</p>        
 // <div>HTML-template:co-template</div>
-          
+</script>      
 ```
 
 ## License
