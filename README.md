@@ -4,7 +4,11 @@
 
 ## Usage 
 
-`comtemplate(str:String, data:Object);`
+支持 AMD、CMD、CommonJS 模块引入
+
+## API
+
+### `comtemplate(str:String, data:Object);`
 
 ## Demo
 
