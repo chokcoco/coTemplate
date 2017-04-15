@@ -4,7 +4,7 @@
 
 ## Usage 
 
-支持 AMD、CMD、CommonJS 模块引入
+支持 AMD、CMD、CommonJS 模块引入。
 
 ## API
 
