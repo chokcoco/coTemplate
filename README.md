@@ -8,6 +8,8 @@
 
 ## API
 
+cotemplate 函数会使用 `data` 参数内的变量替换 `str` 参数中以 `${xxx}` 所表示的变量。
+
 ### `cotemplate(str:String, data:Object);`
 
 ## Demo
