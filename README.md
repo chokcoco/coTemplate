@@ -42,6 +42,3 @@ cotemplate(tpl, data);
 </script>      
 ```
 
-## License
-
-MIT
