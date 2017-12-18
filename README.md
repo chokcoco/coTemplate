@@ -39,6 +39,7 @@ cotemplate(tpl, data);
 // <p>Name:Coco</p>        
 // <p>Age:18</p>        
 // <div>HTML-template:co-template</div>
+    
 </script>      
 ```
 
